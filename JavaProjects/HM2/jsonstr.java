@@ -1,6 +1,5 @@
 import java.util.Arrays;
 
-
 /*
  * Дана json строка { { "фамилия":"Иванов","оценка":"5","предмет":"Математика"},
  * {"фамилия":"Петрова","оценка":"4","предмет":"Информатика"},
@@ -20,11 +19,9 @@ public class jsonstr {
         //System.out.println(array[0]);
         // Arrays.stream(array).map(Arrays::toString).forEach(System.out::println);
         System.out.println(Arrays.deepToString(json_parse_to_array(json)));
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++)
              System.out.println(array[i]);
-        }       
     }
-
     private static String[] Sentence_strings(String[][] arraystr) {
         String[] Sentence_str = new String[arraystr.length];
         StringBuilder Newstr = new StringBuilder();
@@ -58,5 +55,5 @@ public class jsonstr {
         }
         return json_array;
     }
-
+    
 }
